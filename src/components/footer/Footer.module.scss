@@ -1,0 +1,19 @@
+@import "_variables.scss";
+
+.container {
+  .latestSection {
+    width: 90%;
+  }
+}
+
+.links {
+  .title {
+    font-weight: bold;
+    display: block;
+    margin-bottom: .7rem;
+  }
+
+  li {
+    margin-bottom: .5rem;
+  }
+}

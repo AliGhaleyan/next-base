@@ -1,0 +1,54 @@
+@import "_variables.scss";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+.searchInput {
+  position: relative;
+  margin-right: 1rem;
+
+  input {
+    width: 20rem;
+    padding-right: 2.3rem;
+    background-color: darken($light, 3%);
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.7rem;
+    color: darken($light, 40%);
+  }
+}
+
+.signInButton {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: .5rem .8rem;
+}
+
+.shoppingCartIcon {
+  width: 27px;
+  height: 27px;
+  margin-right: 1rem;
+  cursor: pointer;
+  filter: opacity(.7);
+}
+
+.backdrop {
+  position: fixed;
+  height: 100vh;
+  height: 100vh;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  opacity: .3;
+}
