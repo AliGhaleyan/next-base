@@ -6,6 +6,7 @@ import {useRouter} from "next/router";
 import initApp from "../app-init";
 import {container} from "tsyringe";
 import {AppLang} from "../data/utils/app-lang";
+import {wrapper} from "../data/state/store";
 
 const App: FC<AppProps> = ({ Component, pageProps }) => {
     let router = useRouter();
@@ -14,4 +15,4 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
     return <Component {...pageProps} />
 };
 
-export default App;
+export default wrapper.withRedux(App);
