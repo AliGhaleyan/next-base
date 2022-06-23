@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import AppNavbar from "../common/AppNavbar";
 import Footer from "../footer/Footer";
-import BreadcrumbsItem from "../../data/utils/breadcrumbs-item";
+import BreadcrumbsItem from "../../data/util/breadcrumbs-item";
 import Breadcrumbs from "../common/Breadcrumbs";
 
 interface Props {

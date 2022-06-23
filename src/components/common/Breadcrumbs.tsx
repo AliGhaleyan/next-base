@@ -1,5 +1,5 @@
 import React from 'react';
-import BreadcrumbsItem from "../../data/utils/breadcrumbs-item";
+import BreadcrumbsItem from "../../data/util/breadcrumbs-item";
 import AppLink from "./AppLink";
 
 interface Props {

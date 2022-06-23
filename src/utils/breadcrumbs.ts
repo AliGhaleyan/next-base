@@ -1,5 +1,5 @@
 import {container} from "tsyringe";
-import BreadcrumbsManager from "../data/utils/breadcrumbs-manager";
+import BreadcrumbsManager from "../data/util/breadcrumbs-manager";
 
 
 export function registerBreadCrumbs() {

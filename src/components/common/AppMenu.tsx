@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useState } from "react";
 import { Accordion, Collapse, Container, useAccordionButton } from "react-bootstrap";
-import { Menu } from "../../data/models/menu.model";
+import { Menu } from "../../data/model/menu.model";
 import styles from "./Menu.module.scss";
 
 enum MenuTitle {
@@ -15,7 +15,7 @@ interface Props {
     onCollapse?: (status: boolean) => void,
 }
 
-const Menu: FC<Props> = ({ onCollapse }) => {
+const AppMenu: FC<Props> = ({ onCollapse }) => {
     const [key, setKey] = useState<MenuTitle | null>(null);
     const menus: Menu[] = [
         // {},
@@ -54,4 +54,4 @@ const Menu: FC<Props> = ({ onCollapse }) => {
     );
 };
 
-export default Menu;
+export default AppMenu;

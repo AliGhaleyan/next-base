@@ -4,7 +4,7 @@ import styles from "./AppNavbar.module.scss";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSearch, faUser} from "@fortawesome/free-solid-svg-icons";
 import {Cart3} from "react-bootstrap-icons";
-import Menu from "./Menu";
+import AppMenu from "./AppMenu";
 
 const AppNavbar: FC = () => {
     const [showBackdrop, setShowBackdrop] = useState(false);
@@ -31,7 +31,7 @@ const AppNavbar: FC = () => {
             </Container>
 
             <div className="mb-3">
-                <Menu onCollapse={(status) => setShowBackdrop(status)} />
+                <AppMenu onCollapse={(status) => setShowBackdrop(status)} />
             </div>
         </div>
         {showBackdrop ? <div className={styles.backdrop} /> : null}

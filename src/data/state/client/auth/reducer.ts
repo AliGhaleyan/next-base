@@ -25,7 +25,6 @@ export const authReducer = produce(handler, initialState);
 function handler(draft: AuthState, action: AuthAction.Type) {
     switch (action.type) {
         case AuthAction.LOGIN:
-        case AuthAction.REGISTER:
             draft.status = Status.Loading;
             draft.hasError = false;
             break;
